@@ -6,7 +6,7 @@ import os
 # --------------------------------------
 # Load GROQ API KEY from environment variable
 # --------------------------------------
-api_key ="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"
+
 
 if not api_key:
     st.error("❌ GROQ_API_KEY not found in environment variables.\n\nPlease set it before running Streamlit.")
@@ -130,3 +130,4 @@ if "questions" in st.session_state:
         if st.button("Restart Quiz"):
             del st.session_state["questions"]
             st.rerun()
+
